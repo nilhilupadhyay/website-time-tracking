@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Time Tracker</h1>
+      <button id="toggle-timer-btn" class="icon-btn" title="Toggle Floating Timer on Current Page">⏱️</button>
+    </header>
+    
+    <div class="stats-container">
+      <div class="total-time">
+        <span class="label">Total Time Today</span>
+        <h2 id="total-time-display">00:00:00</h2>
+      </div>
+    </div>
+
+    <div class="sites-list-container">
+      <h3>Top Websites</h3>
+      <ul id="sites-list">
+        <!-- Site items will be injected here -->
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

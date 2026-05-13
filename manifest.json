@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Time Tracker & Floating Timer",
+  "version": "1.0",
+  "description": "Track time spent on websites and use a flexible floating timer wherever you want.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "Time Tracker"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content/timer.css"],
+      "js": ["content/timer.js"]
+    }
+  ]
+}
